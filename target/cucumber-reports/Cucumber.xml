@@ -1,145 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="143.2" tests="6" skipped="0" failures="4" errors="0">
-<testcase classname="Login fuctionality" name="TC01_verifyAppUrl" time="15.177">
-<system-out><![CDATA[
-Given user should be on login page..........................................passed
-Then verify application title...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login fuctionality" name="TC04_VerifyInValidLogin - Example #1.1" time="7.687">
-<failure type="org.openqa.selenium.WebDriverException" message="disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: MicrosoftEdge=120.0.2210.144)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [79c500e48bdc2071dc66853351a09732, get {url=http://localhost:100}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:8350}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\rahul\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8350/devtool..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 79c500e48bdc2071dc66853351a09732">
-<![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: MicrosoftEdge=120.0.2210.144)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [79c500e48bdc2071dc66853351a09732, get {url=http://localhost:100}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:8350}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\rahul\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8350/devtool..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 79c500e48bdc2071dc66853351a09732
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at com.vtiger.Stepdefinitions.BaseTest.launchApp(BaseTest.java:72)
-	at com.vtiger.Stepdefinitions.loginSteps.user_should_be_on_login_page(loginSteps.java:44)
-	at ✽.user should be on login page(file:///C:/Selenium/Code/TechSSB_VTigerCRM/TechSSB_VTigerCRM-main/TechSSB_VTigerCRM-main/src/test/resources/Features/Login.feature:4)
-]]>
-</failure>
-<system-out><![CDATA[
-Given user should be on login page..........................................failed
-When user enters userid as "admin1" and password as "pwd1" click on login button.skipped
-Then user can see the error message on login page...........................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Login fuctionality" name="TC04_VerifyInValidLogin - Example #1.2" time="33.806">
-<failure type="org.openqa.selenium.NoSuchWindowException" message="no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.144)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [7c7e7b526f2493fbb891312c65dfa19d, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:8391}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\rahul\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8391/devtool..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c7e7b526f2493fbb891312c65dfa19d">
-<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.144)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [7c7e7b526f2493fbb891312c65dfa19d, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:8391}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\rahul\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8391/devtool..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c7e7b526f2493fbb891312c65dfa19d
-	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
-	at com.vtiger.common.CommonActions.getScreenshot(CommonActions.java:169)
-	at com.vtiger.common.CommonActions.ElementExist(CommonActions.java:144)
-	at com.vtiger.pages.LoginPage.verifyErrorMsg(LoginPage.java:62)
-	at com.vtiger.Stepdefinitions.loginSteps.user_can_see_error_msg(loginSteps.java:75)
-	at ✽.user can see the error message on login page(file:///C:/Selenium/Code/TechSSB_VTigerCRM/TechSSB_VTigerCRM-main/TechSSB_VTigerCRM-main/src/test/resources/Features/Login.feature:13)
-]]>
-</failure>
-<system-out><![CDATA[
-Given user should be on login page..........................................passed
-When user enters userid as "admin2" and password as "pwd2" click on login button.passed
-Then user can see the error message on login page...........................failed
-]]></system-out>
-</testcase>
-<testcase classname="Login fuctionality" name="TC03_VerifyValidLogin" time="26.942">
-<failure type="org.openqa.selenium.NoSuchWindowException" message="no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.144)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [16914d6bd15b7c62b8adfc79027139a0, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:8494}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\rahul\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8494/devtool..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 16914d6bd15b7c62b8adfc79027139a0">
-<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.144)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [16914d6bd15b7c62b8adfc79027139a0, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:8494}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\rahul\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8494/devtool..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 16914d6bd15b7c62b8adfc79027139a0
-	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
-	at com.vtiger.common.CommonActions.getScreenshot(CommonActions.java:169)
-	at com.vtiger.common.CommonActions.ElementExist(CommonActions.java:144)
-	at com.vtiger.pages.HomePage.verifyHomePage(HomePage.java:148)
-	at com.vtiger.Stepdefinitions.loginSteps.user_should_be_navigated_to_home_page(loginSteps.java:55)
-	at ✽.user should be navigated to home page(file:///C:/Selenium/Code/TechSSB_VTigerCRM/TechSSB_VTigerCRM-main/TechSSB_VTigerCRM-main/src/test/resources/Features/Login.feature:21)
-]]>
-</failure>
-<system-out><![CDATA[
-Given user should be on login page..........................................passed
-When user enters valid credentials and click on login button................passed
-Then user should be navigated to home page..................................failed
-And user can see logout link on home page...................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Login fuctionality" name="TC05_Lead_E2E_validate" time="42.039">
+<testsuite name="Cucumber" time="42.994" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login fuctionality" name="TC05_Lead_E2E_validate" time="32.351">
 <system-out><![CDATA[
 Given user should be on login page..........................................passed
 When user enters valid credentials and click on login button................passed
@@ -182,45 +43,10 @@ Then Verify that Lead Status dropdown is sorted form or not.................pass
 Then click on userRedioButton...............................................passed
 Then click on TeamRedioButton...............................................passed
 Then Verify that lead is created............................................passed
+Then close browser..........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login fuctionality" name="TC06_Potential_E2E_validate" time="17.116">
-<failure type="org.openqa.selenium.NoSuchWindowException" message="no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.144)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [e89bd733aa4dbeb33c9eb948c189e6f9, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:8729}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\rahul\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8729/devtool..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e89bd733aa4dbeb33c9eb948c189e6f9">
-<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=120.0.2210.144)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [e89bd733aa4dbeb33c9eb948c189e6f9, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.144, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:8729}, msedge: {msedgedriverVersion: 120.0.2210.144 (cbca972d598..., userDataDir: C:\Users\rahul\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8729/devtool..., se:cdpVersion: 120.0.2210.144, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e89bd733aa4dbeb33c9eb948c189e6f9
-	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:405)
-	at com.vtiger.pages.Potential_Page.search_button_validition(Potential_Page.java:106)
-	at com.vtiger.Stepdefinitions.New_Potential_Steps.verify_that_search_button_is_able_to_search(New_Potential_Steps.java:64)
-	at ✽.verify that search button is able to search(file:///C:/Selenium/Code/TechSSB_VTigerCRM/TechSSB_VTigerCRM-main/TechSSB_VTigerCRM-main/src/test/resources/Features/Login.feature:81)
-]]>
-</failure>
+<testcase classname="Login fuctionality" name="TC06_Potential_E2E_validate" time="10.287">
 <system-out><![CDATA[
 Given user should be on login page..........................................passed
 When user enters valid credentials and click on login button................passed
@@ -231,7 +57,7 @@ Then verify that account name should not be enabled.........................pass
 And Verify that Account name search field is clickable......................passed
 Then verify that Account Search inside Account Name is enabled by entering name.passed
 And verify thar Account search inside Cityfield is enabled by entring city name.passed
-Then verify that search button is able to search............................failed
+Then verify that search button is able to search............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

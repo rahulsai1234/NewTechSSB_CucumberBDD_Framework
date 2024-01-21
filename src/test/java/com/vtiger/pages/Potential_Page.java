@@ -101,15 +101,14 @@ public class Potential_Page extends CommonActions{
 	
 	public void search_button_validition()
 	{
-		
 		EDFG_Group_Limited_link.click();
-	    driver.close();
+	   
 	    
 	    Set<String > Windows_id= driver.getWindowHandles();
 		Iterator <String> itr = Windows_id.iterator();
 		
 		String MainWindow_id= itr.next();
-		String ChildWindow_id= itr.next();
+		//String ChildWindow_id= itr.next();
 	    driver.switchTo().window(MainWindow_id);
 	}
 	

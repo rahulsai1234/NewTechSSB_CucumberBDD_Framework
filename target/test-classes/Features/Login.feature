@@ -24,7 +24,7 @@ And user can see logout link on home page
 
 @Lead_creation
 Scenario: TC05_Lead_E2E_validate
-Given user should be on login page
+
 When user enters valid credentials and click on login button
 Then user should be navigated to home page
 Then user click on New Lead link
@@ -65,11 +65,11 @@ Then Verify that Lead Status dropdown is sorted form or not
 Then click on userRedioButton
 Then click on TeamRedioButton
 Then Verify that lead is created
-
+Then close browser
 
 @Potential
 Scenario: TC06_Potential_E2E_validate
-Given user should be on login page
+
 When user enters valid credentials and click on login button
 Then user should be navigated to home page
 Then user click on New_Potential link

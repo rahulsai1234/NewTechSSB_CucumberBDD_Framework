@@ -8,15 +8,19 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features = "src/test/resources/Features/",
+		features = "src/test/resources/Features",
 		glue = "com.vtiger.Stepdefinitions",
 		plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
 				"junit:target/cucumber-reports/Cucumber.xml",
-				"html:target/cucumber-reports.html"}
-		//,dryRun = true
-		//,tags = "@Lead_creation",
-		//tags="@Potential",
-
+				"html:target/cucumber-reports.html"},
+		dryRun = false,
+				tags= "@Lead_creation or @Potential"
+		
+		
+				//,dryRun = false,
+				//tags = "@Lead_creation"
+				//tags="@Potential"
+		
 		)
 public class TestRunner {
 

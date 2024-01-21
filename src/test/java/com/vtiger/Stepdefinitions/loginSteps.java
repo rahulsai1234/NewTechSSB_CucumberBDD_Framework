@@ -334,4 +334,10 @@ public class loginSteps extends BaseTest {
 		 HomePage hp = new HomePage(driver, logger);
 		 hp.Verify_lead_created();
 	 }
+	 
+	 @Then("close browser")
+	 public void close_browser() {
+	     driver.close();
+	     }
+
 }
