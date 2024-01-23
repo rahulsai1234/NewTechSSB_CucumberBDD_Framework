@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="42.994" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Login fuctionality" name="TC05_Lead_E2E_validate" time="32.351">
+<testsuite name="Cucumber" time="26.506" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login fuctionality" name="TC05_Lead_E2E_validate" time="20.847">
 <system-out><![CDATA[
 Given user should be on login page..........................................passed
 When user enters valid credentials and click on login button................passed
@@ -46,7 +46,7 @@ Then Verify that lead is created............................................pass
 Then close browser..........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login fuctionality" name="TC06_Potential_E2E_validate" time="10.287">
+<testcase classname="Login fuctionality" name="TC06_Potential_E2E_validate" time="5.416">
 <system-out><![CDATA[
 Given user should be on login page..........................................passed
 When user enters valid credentials and click on login button................passed
