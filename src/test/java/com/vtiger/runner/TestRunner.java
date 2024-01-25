@@ -14,12 +14,11 @@ import io.cucumber.junit.CucumberOptions;
 				"junit:target/cucumber-reports/Cucumber.xml",
 				"html:target/cucumber-reports.html"},
 		dryRun = false,
-				tags= "@Lead_creation or @Potential"
-		
-		
+				//tags= "@Lead_creation or @Potential"
+
 				//,dryRun = false,
 				//tags = "@Lead_creation"
-				//tags="@Potential"
+				tags="@Potential"
 		
 		)
 public class TestRunner {

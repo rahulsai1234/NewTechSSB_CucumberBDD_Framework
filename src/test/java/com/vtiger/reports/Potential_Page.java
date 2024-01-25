@@ -1,8 +1,8 @@
-package com.vtiger.pages;
+package com.vtiger.reports;
 
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
+import org.apache.poi.hssf.record.PageBreakRecord;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.vtiger.common.CommonActions;
+import org.openqa.selenium.support.ui.Select;
 
 public class Potential_Page extends CommonActions{
 
@@ -45,7 +46,23 @@ public class Potential_Page extends CommonActions{
 	
 	@FindBy(xpath= "//input[@title='Search [Alt+Q]']")
 	WebElement Search;
-	
+
+	@FindBy(xpath = "//select[@name='opportunity_type']")
+	WebElement type;
+
+	@FindBy(xpath = "//select[@name='leadsource']")
+	WebElement leadsource;
+
+	@FindBy(xpath = "//img[@id='jscal_trigger_closingdate']")
+	WebElement calender;
+
+	@FindBy(xpath = "//body/div[9]/table[1]/thead[1]/tr[1]/td[2]")
+	WebElement datepicker;
+
+	@FindBy(xpath = "//td[@class='hilite nav button hilite']")
+	WebElement Month_Back;
+
+
 	
 	public void click_New_Potential()
 	{
@@ -111,8 +128,79 @@ public class Potential_Page extends CommonActions{
 		//String ChildWindow_id= itr.next();
 	    driver.switchTo().window(MainWindow_id);
 	}
-	
-	
-	
 
+	public void count_type()
+	{
+		Select sel =new Select(type);
+		List<WebElement> lst=sel.getOptions();
+
+		for(WebElement options:lst)
+		{
+			System.out.println(options.getText());
+		}
+
+		int count= lst.size();
+		System.out.println("Potential count_type count is:"+count);
+	}
+	public void type_Sorted()
+	{
+		Select sel =new Select(type);
+		List<WebElement> lst=sel.getOptions();
+
+		ArrayList original_list = new ArrayList();
+		ArrayList tempList = new ArrayList();
+
+		for(WebElement e :sel.getOptions())
+		{
+			original_list.add(e.getText());
+			tempList.add(e.getText());
+		}
+		System.out.println(original_list);
+		Collections.sort(tempList);
+		System.out.println(tempList);
+
+		if(original_list == tempList)
+		{
+			System.out.println("DropDown list are in Sorted from");
+		}
+		else {
+
+			System.out.println(" As per requirement Dropdown list are not in sorted from");
+		}
+	}
+
+	public void LeadSourceCount()
+	{
+		Select Sel= new Select(leadsource);
+		List<WebElement> lst=Sel.getOptions();
+
+		for(WebElement options:lst )
+		{
+			System.out.println(options.getText());
+		}
+		int count= lst.size();
+		System.out.println("Lead Source Count is: "+count);
+	}
+
+	public void date_selection()
+	{
+		calender.click();
+		String Target_month_year= "December, 2026";
+
+		Target_month_year.equals(datepicker);
+		while (true)
+		{
+			String text=datepicker.getText();
+			if (Target_month_year.equals(text))
+			{
+				break;
+			}
+			else
+			{
+				Month_Back.click();
+			}
+		}
+
+
+	}
 }
