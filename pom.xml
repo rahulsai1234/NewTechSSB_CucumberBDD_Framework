@@ -49,7 +49,7 @@
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>4.0.6</version>
-		</dependency>
+</dependency>
 
 
 <dependency>
@@ -58,7 +58,28 @@
   <version>1.18</version>
 </dependency>
 
-	  
-  </dependencies>
+       <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+       <dependency>
+           <groupId>io.rest-assured</groupId>
+           <artifactId>rest-assured</artifactId>
+           <version>5.4.0</version>
+           <scope>test</scope>
+       </dependency>
+       <dependency>
+           <groupId>ATHCucumberFramework</groupId>
+           <artifactId>ATHCucumberFramework</artifactId>
+           <version>0.0.1-SNAPSHOT</version>
+           <scope>test</scope>
+       </dependency>
+
+       <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+       <dependency>
+           <groupId>io.rest-assured</groupId>
+           <artifactId>json-schema-validator</artifactId>
+           <version>5.3.2</version>
+       </dependency>
+
+
+   </dependencies>
   
 </project>

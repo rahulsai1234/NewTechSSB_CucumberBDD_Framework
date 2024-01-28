@@ -24,7 +24,6 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
 import com.codoid.products.fillo.Recordset;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -33,6 +32,7 @@ public class BaseTest {
 public static WebDriver driver;
 public static Properties prop;
 public static Map<String,Map<String,String>> alldata;
+public static Map<String,Map<String,String>> API_dt;
 public static ExtentHtmlReporter htmlReporter;
 public static ExtentReports extent;
 public static ExtentTest logger;
@@ -45,7 +45,10 @@ public static String vTCName;
 		{
 		prop = readproperties();
 		alldata = readdata(System.getProperty("user.dir")+"/src/test/resources/TestData/data.xlsx", "Sheet1");
-		System.out.println(alldata);
+		API_dt = readdata(System.getProperty("user.dir")+"/src/test/resources/TestData/data.xlsx", "API_Sheet");
+
+
+			System.out.println(alldata);
 		createExtentReport();
 		}
 	}

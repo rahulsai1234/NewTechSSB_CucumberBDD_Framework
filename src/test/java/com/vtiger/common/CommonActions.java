@@ -179,4 +179,21 @@ public class CommonActions {
 		return path;
 	}
 
+
+	public void writeAPI_Info(String endPoint, String req, String resp)
+	{
+		try
+		{
+		logger.info("API Endpoint URL = "+endPoint);
+		logger.info("Request = "+req);
+		logger.info("Response+ "+resp);
+		}
+		catch (Exception e)
+		{
+		System.out.println(e.getMessage());
+		logger.fail("Step failed due to error ="+e.getMessage()+"<span class='label end-time'><a href="+getScreenshot()+">Screenshot</a></span>");
+		}
+
+	}
+
 }
