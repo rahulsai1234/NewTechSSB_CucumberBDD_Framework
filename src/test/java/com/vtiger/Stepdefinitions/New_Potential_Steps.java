@@ -1,10 +1,11 @@
 package com.vtiger.Stepdefinitions;
 
-import com.vtiger.pages.Potential_Page;
+import com.vtiger.reports.Potential_Page;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
 public class New_Potential_Steps extends BaseTest{
@@ -64,6 +65,32 @@ public class New_Potential_Steps extends BaseTest{
 		PTP.search_button_validition();
 	}
 
+	@And("verify that Potential Information type option count_Three")
+	public void verifyThatPotentialInformationTypeOptionCount_Three()
+	{
+		Potential_Page PTP= new Potential_Page(driver,logger);
+		PTP.count_type();
+	}
 
-	
+
+	@Then("Verify that Potential Information type option is not sorted form")
+	public void verifyThatPotentialInformationTypeOptionIsNotSortedForm()
+	{
+		Potential_Page PTP= new Potential_Page(driver,logger);
+		PTP.type_Sorted();
+	}
+
+	@And("verify that Potential Information type Lead Source count")
+	public void verifyThatPotentialInformationTypeLeadSourceCount()
+	{
+		Potential_Page PTP= new Potential_Page(driver,logger);
+		PTP.LeadSourceCount();
+	}
+
+	@Then("verify that pick perticular date from calender")
+	public void verifyThatPickPerticularDateFromCalender()
+	{
+		Potential_Page PTP= new Potential_Page(driver,logger);
+		PTP.date_selection();
+	}
 }

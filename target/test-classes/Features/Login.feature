@@ -79,8 +79,10 @@ And Verify that Account name search field is clickable
 Then verify that Account Search inside Account Name is enabled by entering name 
 And verify thar Account search inside Cityfield is enabled by entring city name
 Then verify that search button is able to search 
-
-
+And verify that Potential Information type option count_Three
+  Then Verify that Potential Information type option is not sorted form
+And verify that Potential Information type Lead Source count
+#Then verify that pick perticular date from calender
 
 
 
