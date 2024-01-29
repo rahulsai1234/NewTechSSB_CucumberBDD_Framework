@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="3.38" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="API_Automation" name="Validate Get API List Users" time="3.085">
+<testsuite name="Cucumber" time="4.507" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="API_Automation" name="TC01_Validate Get API list Users" time="4.164">
 <system-out><![CDATA[
 Given endpoint_url "api/users?page=2".......................................passed
 When user call get method...................................................passed

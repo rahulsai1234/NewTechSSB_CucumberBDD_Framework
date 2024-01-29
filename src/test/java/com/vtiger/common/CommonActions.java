@@ -18,7 +18,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentTest;
 
-public class CommonActions {
+public class CommonActions
+{
 	
 	private WebDriver driver;
 	private ExtentTest logger;
@@ -193,7 +194,25 @@ public class CommonActions {
 		System.out.println(e.getMessage());
 		logger.fail("Step failed due to error ="+e.getMessage()+"<span class='label end-time'><a href="+getScreenshot()+">Screenshot</a></span>");
 		}
+	}
 
+	public void WriteStatusLine(String Exptd_Status, String Actual_Status)
+	{
+		try
+		{
+			if (Exptd_Status.equals(Actual_Status))
+			{
+				logger.pass("Expected Status Line= " + Exptd_Status + "has been matched with actual status line = " + Actual_Status);
+			} else
+			{
+				logger.fail("Expected Status Line= " + Exptd_Status + "didnt matched with Actual_Status");
+			}
+		}
+		catch (Exception e)
+		{
+			System.out.println(e.getMessage());
+			logger.fail("Step failed due to error ="+e.getMessage()+"<span class='label end-time'><a href="+getScreenshot()+">Screenshot</a></span>");
+		}
 	}
 
 }
