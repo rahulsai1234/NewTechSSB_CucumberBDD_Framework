@@ -61,6 +61,7 @@ public class LoginPage extends CommonActions {
 	{
 		ElementExist(errmsg, "Error message validated successfully");
 	}
+
 	
 	
 	

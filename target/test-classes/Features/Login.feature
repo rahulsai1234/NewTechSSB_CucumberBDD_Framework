@@ -83,6 +83,8 @@ And verify that Potential Information type option count_Three
   Then Verify that Potential Information type option is not sorted form
 And verify that Potential Information type Lead Source count
 #Then verify that pick perticular date from calender
+And verify the save button should be clickable
+  Then verify that Potential_xxx_Click is displayed
 
 
 

@@ -1,6 +1,6 @@
 package com.vtiger.Stepdefinitions;
 
-import com.vtiger.reports.Potential_Page;
+import com.vtiger.pages.Potential_Page;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -92,5 +92,20 @@ public class New_Potential_Steps extends BaseTest{
 	{
 		Potential_Page PTP= new Potential_Page(driver,logger);
 		PTP.date_selection();
+	}
+
+	@And("verify the save button should be clickable")
+	public void verifyTheSaveButtonShouldBeClickable()
+	{
+		Potential_Page PTP= new Potential_Page(driver,logger);
+		PTP.click_Save_Btn();
+	}
+
+	@Then("verify that Potential_xxx_Click is displayed")
+	public void verifyThatPotential_xxx_ClickIsDisplayed()
+	{
+		Potential_Page PTP= new Potential_Page(driver,logger);
+		PTP.Potential_xxx_Click();
+		driver.close();
 	}
 }

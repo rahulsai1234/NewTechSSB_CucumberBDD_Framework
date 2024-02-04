@@ -1,4 +1,4 @@
-package com.vtiger.reports;
+package com.vtiger.pages;
 
 import java.util.*;
 
@@ -61,6 +61,12 @@ public class Potential_Page extends CommonActions{
 
 	@FindBy(xpath = "//td[@class='hilite nav button hilite']")
 	WebElement Month_Back;
+
+	@FindBy(xpath = "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/form[1]/table[5]/tbody[1]/tr[1]/td[1]/div[1]/input[1]")
+	WebElement Save_Btn;
+
+	@FindBy(xpath = "//td[@class='moduleTitle']")
+	WebElement Potential_xxx_Verify;
 
 
 	
@@ -200,7 +206,15 @@ public class Potential_Page extends CommonActions{
 				Month_Back.click();
 			}
 		}
+	}
 
+	public void click_Save_Btn()
+	{
+		Save_Btn.click();
+	}
 
+	public void Potential_xxx_Click()
+	{
+		Potential_xxx_Verify.isDisplayed();
 	}
 }

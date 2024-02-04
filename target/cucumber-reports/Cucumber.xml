@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="4.507" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="API_Automation" name="TC01_Validate Get API list Users" time="4.164">
+<testsuite name="Cucumber" time="27.458" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login fuctionality" name="TC05_Lead_E2E_validate" time="20.411">
 <system-out><![CDATA[
-Given endpoint_url "api/users?page=2".......................................passed
-When user call get method...................................................passed
-Then user can see the StatusCode response...................................passed
-And Status line should be "HTTP/1.1 200 OK".................................passed
+Given user should be on login page..........................................passed
+When user enters valid credentials and click on login button................passed
+Then user should be navigated to home page..................................passed
+Then user click on New Lead link............................................passed
+Then verify the FirstName Salutation count is 5.............................passed
+And User can select single Salutation.......................................passed
+Then verify that FirstName field is Enabled.................................passed
+Then Verify that FirstName field maximum number of characters supported.....passed
+And verify that Last_Name field is Enabled..................................passed
+Then Verify that Last_Name field maximum number of characters supported.....passed
+And Verify that Last_Name field accept duplicate character,special symbols,Special sign_..etc.passed
+Then Verify that Company_Name is Enabled....................................passed
+And Verify that Company_Name is Displayed...................................passed
+And Verify that designation is Enabled......................................passed
+Then Check whether leadsource dropdown is selected or not...................passed
+Then Verify that leadsource dropdown count..................................passed
+Then Verify that leadsource dropdown values are in sorted order or not......passed
+Then Verify that leadsource dropdown single value can be selected...........passed
+Then Check whether industry dropdown is displayed or not....................passed
+Then Verify that industry dropdown count....................................passed
+Then Verify that industry dropdown values are in sorted order or not........passed
+Then Verify that industry dropdown single value can be selected.............passed
+And Verify that user can enter Annual Revenue...............................passed
+And verify that No Of Employees field is Enabled............................passed
+And verify that Yahoo Id field is Enabled...................................passed
+And Verify that Address information Street field is Enabled.................passed
+And verify that Address information City field is Enabled...................passed
+And verify that Address information State field is Enabled..................passed
+And verify that Address information Postal Code field is Enabled............passed
+And verify that Address information Country: field is Enabled...............passed
+And verify that Description Information Description: field is Enabled.......passed
+And verify that Lead Information Phone: field is Enabled....................passed
+And verify that Lead Information Mobile: field is Enabled...................passed
+And Verify that Lead Information Fax: is Enabled............................passed
+And verify that Lead Information Email: field is Enabled....................passed
+And verify that Lead Information Website field is Enabled...................passed
+Then Verify that Lead Status dropdown count.................................passed
+Then Verify that Lead Status dropdown is sorted form or not.................passed
+Then click on userRedioButton...............................................passed
+Then click on TeamRedioButton...............................................passed
+Then Verify that lead is created............................................passed
+Then close browser..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login fuctionality" name="TC06_Potential_E2E_validate" time="6.734">
+<system-out><![CDATA[
+Given user should be on login page..........................................passed
+When user enters valid credentials and click on login button................passed
+Then user should be navigated to home page..................................passed
+Then user click on New_Potential link.......................................passed
+And verify that potentialname is enabled....................................passed
+Then verify that account name should not be enabled.........................passed
+And Verify that Account name search field is clickable......................passed
+Then verify that Account Search inside Account Name is enabled by entering name.passed
+And verify thar Account search inside Cityfield is enabled by entring city name.passed
+Then verify that search button is able to search............................passed
+And verify that Potential Information type option count_Three...............passed
+Then Verify that Potential Information type option is not sorted form.......passed
+And verify that Potential Information type Lead Source count................passed
+And verify the save button should be clickable..............................passed
+Then verify that Potential_xxx_Click is displayed...........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
