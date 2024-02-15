@@ -20,6 +20,9 @@ import io.cucumber.junit.CucumberOptions;
 				//,tags="@Potential"
 		        //,tags="@GetAPI"
 		        //,tags="New_Note"
+
+		,monochrome= false
+
 		
 		)
 public class TestRunner {
